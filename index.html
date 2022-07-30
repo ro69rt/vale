@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	-->
+	<title>Vale</title>
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-row">
+			<div class="header-block header-block__logo">
+				<img src="img/Logo.png" alt="" class="header-logo">
+			</div>
+			<div class="header-block header-block__search">
+				<form class="header-search">
+					<input type="text" placeholder="Я ищу..." class="header-search__input">
+					<button class="header-search__btn">Поиск</button>
+				</form>
+			</div>
+			<div class="header-block header-block__sign">
+				<div class="header-btn header-sign">
+					<img class="header-sign__img" src="img/user_icon.png" alt="">
+					<span class="header-sign__text">Войти</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<div class="content">
+	<div class="wrapper">
+		<div class="wrapper-sidebar sidebar">
+			<span class="sidebar-title">Категории</span>
+
+			<ul class="sidebar-list">
+				<li class="sidebar-link">Банки 
+					<svg class="sidebar-link__svg" width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path class="sidebar-link__path"
+							d="M0.880012 0.160002C0.640012 0.400002 0.640012 0.800002 0.880012 1.04L3.84001 4L0.880012 6.96C0.640012 7.2 0.640012 7.56 0.880012 7.8C1.12001 8.04 1.48001 8.04 1.72001 7.8L5.12001 4.4C5.36001 4.16 5.36001 3.8 5.12001 3.56L1.72001 0.160002C1.48001 -0.0399979 1.12001 -0.0399979 0.880012 0.160002Z"
+							fill="#666666" />
+					</svg>
+				</li>
+				<li class="sidebar-link">Бутылки
+					<svg class="sidebar-link__svg" width="6" height="8" viewBox="0 0 6 8" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path class="sidebar-link__path"
+							d="M0.880012 0.160002C0.640012 0.400002 0.640012 0.800002 0.880012 1.04L3.84001 4L0.880012 6.96C0.640012 7.2 0.640012 7.56 0.880012 7.8C1.12001 8.04 1.48001 8.04 1.72001 7.8L5.12001 4.4C5.36001 4.16 5.36001 3.8 5.12001 3.56L1.72001 0.160002C1.48001 -0.0399979 1.12001 -0.0399979 0.880012 0.160002Z"
+							fill="#666666" />
+					</svg>
+				</li>
+				<li class="sidebar-link">Бутыли, балоны, графины
+					<svg class="sidebar-link__svg" width="6" height="8" viewBox="0 0 6 8" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path class="sidebar-link__path"
+							d="M0.880012 0.160002C0.640012 0.400002 0.640012 0.800002 0.880012 1.04L3.84001 4L0.880012 6.96C0.640012 7.2 0.640012 7.56 0.880012 7.8C1.12001 8.04 1.48001 8.04 1.72001 7.8L5.12001 4.4C5.36001 4.16 5.36001 3.8 5.12001 3.56L1.72001 0.160002C1.48001 -0.0399979 1.12001 -0.0399979 0.880012 0.160002Z"
+							fill="#666666" />
+					</svg>
+				</li>
+				<li class="sidebar-link">Крышки, пробки, колпаки
+					<svg class="sidebar-link__svg" width="6" height="8" viewBox="0 0 6 8" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path class="sidebar-link__path"
+							d="M0.880012 0.160002C0.640012 0.400002 0.640012 0.800002 0.880012 1.04L3.84001 4L0.880012 6.96C0.640012 7.2 0.640012 7.56 0.880012 7.8C1.12001 8.04 1.48001 8.04 1.72001 7.8L5.12001 4.4C5.36001 4.16 5.36001 3.8 5.12001 3.56L1.72001 0.160002C1.48001 -0.0399979 1.12001 -0.0399979 0.880012 0.160002Z"
+							fill="#666666" />
+					</svg>
+				</li>
+				<li class="sidebar-link">Оборудование, станки
+					<svg class="sidebar-link__svg" width="6" height="8" viewBox="0 0 6 8" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path class="sidebar-link__path"
+							d="M0.880012 0.160002C0.640012 0.400002 0.640012 0.800002 0.880012 1.04L3.84001 4L0.880012 6.96C0.640012 7.2 0.640012 7.56 0.880012 7.8C1.12001 8.04 1.48001 8.04 1.72001 7.8L5.12001 4.4C5.36001 4.16 5.36001 3.8 5.12001 3.56L1.72001 0.160002C1.48001 -0.0399979 1.12001 -0.0399979 0.880012 0.160002Z"
+							fill="#666666" />
+					</svg>
+				</li>
+			</ul>
+		</div>
+		<!-- Slider start -->
+		<div class="wrapper-slider swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+		
+		<!-- Slider end -->
+		<div class="wrapper-free free">
+			<span class="free-title">Свободный блок</span>
+			<div class="free-line"></div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="products">
+	<div class="products-left products-left__jars">
+		<span class="products-left__title">Банки</span>
+		<span class="products-left__btn">Смотреть всё</span>
+	</div>
+
+	<div class="products-right">
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+	</div>
+</div>
+
+<div class="products">
+	<div class="products-left products-left__bottles">
+		<span class="products-left__title">Бутылки</span>
+		<span class="products-left__btn">Смотреть всё</span>
+	</div>
+
+	<div class="products-right">
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+	</div>
+</div>
+
+
+<div class="products">
+	<div class="products-left products-left__decanter">
+		<span class="products-left__title">Бутыли, баллоны, графины</span>
+		<span class="products-left__btn">Смотреть всё</span>
+	</div>
+
+	<div class="products-right">
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+	</div>
+</div>
+
+<div class="products">
+	<div class="products-left products-left__caps">
+		<span class="products-left__title">Крышки, пробки, колпаки</span>
+		<span class="products-left__btn">Смотреть всё</span>
+	</div>
+
+	<div class="products-right">
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+	</div>
+</div>
+
+<div class="products">
+	<div class="products-left products-left__equipment">
+		<span class="products-left__title">Оборудование, станки</span>
+		<span class="products-left__btn">Смотреть всё</span>
+	</div>
+
+	<div class="products-right">
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+		<div class="products-block">
+			<span class="products-block__text">Товар</span>
+			<img src="img/tovar.png" alt="" class="products-block__img">
+		</div>
+	</div>
+</div>
+
+
+
+
+<footer class="footer">
+
+</footer>
+
+<script type="module">
+	import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+	const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+
+			autoplay: {
+			delay: 3000,
+			},
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable:'true'
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		
+		});
+</script>
+</body>
+</html>
