@@ -58,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Fonts */
 
 @font-face {
-	font-display: swap;
     font-family:'Roboto';
     src: url('../fonts/Roboto.ttf');
     src: url('../fonts/Roboto.eot');
@@ -72,57 +71,11 @@ h1, h2, h3, h4, h5, h6 {
     font-stretch: normal;
     unicode-range: U+0020-2044;
 }
-
 @font-face {
-	font-display: swap;
-    font-family:'Roboto-Regular';
-    src: url('../fonts/Roboto.eot');
-	src: url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto.woff2') format('woff2'),
-		url('../fonts/Roboto.woff') format('woff'),
-		url('../fonts/Roboto.ttf') format('truetype'),
-		url('../fonts/Roboto.svg#Roboto') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2044;
-}
-
-@font-face {
-	font-display: swap;
-    font-family:'Roboto-Bold';
-    src: url('../fonts/Roboto Bold.eot');
-	src: url('../fonts/Roboto Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto Bold.woff2') format('woff2'),
-		url('../fonts/Roboto Bold.woff') format('woff'),
-		url('../fonts/Roboto Bold.ttf') format('truetype'),
-		url('../fonts/Roboto Bold.svg#Roboto Bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2044;
-}
-
-@font-face {
-	font-display: swap;
-    font-family:'Roboto-Medium';
-    src: url('../fonts/Roboto Medium.eot');
-	src: url('../fonts/Roboto Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto Medium.woff2') format('woff2'),
-		url('../fonts/Roboto Medium.woff') format('woff'),
-		url('../fonts/Roboto Medium.ttf') format('truetype'),
-		url('../fonts/Roboto Medium.svg#Roboto Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2044;
-}
-
-@font-face {
-	font-display: swap;
-    font-family:'Roboto-Light';
-    src: url('../fonts/Light.eot');
-	font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2044;
 }
