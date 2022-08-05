@@ -5,12 +5,16 @@
 	width:1200px;
 	max-width:1200px;
 	margin:0 auto;
+	@media(max-width:1220px){
+		width:100%;
+		max-width:100%;
+	}
 }
 
 body{
 	background: #F7F5F5;
 	overflow-x: hidden;
-	font-family: "Roboto", "Arial", sans-serif;
+	font-family: "Roboto";
 }
 .content{
 	position:relative;
@@ -43,6 +47,7 @@ body{
 		@extend %container;
 		padding-top:15px;
 		display:flex;
+		position:relative;
 	}
 	&-block {
 		&__logo{
@@ -52,16 +57,19 @@ body{
 		}
 		&__search{
 			margin-left: 42px;
-			margin-right: 332px;
 		}
-		&__sign{
-			width: 35px;
-			height: 40px;
+		&__btn{
+			display:flex;
+			position:absolute;
+			right:0;
 		}
+
 	}
 
 	&-logo {
 		margin-top:8px;
+		width: 80.7px;
+		height:25px;
 	}
 
 	&-search {
@@ -78,10 +86,14 @@ body{
 			border-radius: 50px;
 			padding-left: 26px;
 			box-sizing: border-box;
+			font-size: 14px;
+			font-family: "Roboto";
+			font-weight: 400;
 			&::placeholder{
 				font-style: normal;
 				font-weight: 500;
 				font-size: 14px;
+				font-family:"Roboto";
 				line-height: 16.41px;
 				color: #ADB0B3;
 			}
@@ -95,16 +107,18 @@ body{
 			right:0;
 			font-weight:500;
 			font-size:15px;
+			font-family: "Roboto";
 			color:#ffffff;
-			font-family: "Roboto-Medium";
 		}
 	}
 
 	&-btn {
 		text-align: center;
 	}
-
-	&-sign {
+	&-basket{
+		margin-left: 13px;
+	}
+	&-sign,&-basket {
 		cursor:pointer;
 		&__img {
 			width:22px;
@@ -115,7 +129,9 @@ body{
 			display:block;
 			margin-top:8px;
 			font-size:12px;
+			font-family: "Roboto";
 			color:#262626;
+			font-weight:500;
 		}
 }
 }
@@ -136,6 +152,7 @@ body{
 .slider-text{
 	font-weight: 700;
 	font-size:20px;
+	font-family: "Roboto";
 	text-transform: uppercase;
 	line-height:23.44px;
 }
@@ -151,9 +168,10 @@ body{
 	&-title {
 		color: #262626;
 		font-size:16px;
+		font-family: "Roboto";
 		font-weight:500;
 		line-height: 18.75px;
-		font-family:"Roboto-Medium";
+		
 	}
 
 	&-list {
@@ -166,6 +184,7 @@ body{
 	&-link {
 		font-weight: 400;
 		font-size: 14px;
+		font-family: "Roboto";
 		line-height:16.41px;
 		margin-bottom:8px;
 		color:#262626;
@@ -198,9 +217,10 @@ body{
 	&-title {
 		font-weight: 500;
 		font-size: 16px;
+		font-family: "Roboto";
 		line-height: 18.75px;
 		color:#262626;
-		font-family:"Roboto-Medium";
+		
 	}
 	&-line{
 		width: 100%;
@@ -218,6 +238,7 @@ body{
 	align-items:center;
 	justify-content:center;
 	font-size:22px;
+	font-family: "Roboto";
 	cursor:pointer;
 }
 .wrapper-slider{
@@ -331,9 +352,10 @@ body{
 		}
 		&__title{
 			font-size:20px;
+			font-family: "Roboto";
 			line-height:23.44px;
 			font-weight:500;
-			font-family:"Roboto-Medium";
+			
 			color:#262626;
 		}
 		&__btn{
@@ -344,8 +366,9 @@ body{
 			display:flex;
 			align-items:center;
 			justify-content: center;
-			font-weight:500;
+			font-weight:600;
 			font-size:14px;
+			font-family: "Roboto";
 			line-height:16.41px;
 			color:#ffffff;
 			border-radius:6px;
@@ -385,9 +408,10 @@ body{
 		}				
 		&__text{
 			font-size: 16px;
+			font-family: "Roboto";
 			line-height: 18.75px;
 			font-weight:500;
-			font-family:"Roboto-Medium";
+			
 			color:#262626;
 		}
 
@@ -431,9 +455,10 @@ Categories
 	&-link{
 		color:#808080;
 		font-size:12px;
+		font-family: "Roboto";
 		font-weight:500;
 		line-height:14.06px;
-		font-family:"Roboto-Medium";
+		
 		padding:0 2px;
 		cursor:pointer;
 		&:nth-child(1):before{
@@ -458,8 +483,10 @@ Categories
 	&__title{
 		color:#262626;
 		font-size:16px;
+		font-family: "Roboto";
+		font-weight:500;
 		line-height:18.75px;
-		font-family:"Roboto-Medium";
+		
 	}
 	&__menu{
 		border-top:1px solid #E5E0E0;
@@ -469,9 +496,11 @@ Categories
 	}
 	&__link{
 		font-size: 14px;
+		font-family: "Roboto";
 		line-height: 16px;
 		margin-bottom:8px;
 		cursor:pointer;
+		font-weight:400;
 		&.active{
 			background:#FF5833;
 			height:24px;
@@ -498,8 +527,9 @@ Categories
 		display:block;
 		color:#262626;
 		font-size:16px;
+		font-family: "Roboto";
+		font-weight:500;
 		line-height:18.75px;
-		font-family:"Roboto-Medium";
 		position:relative;
 		width:100%;
 		border-bottom:1px solid #E5E0E0;
@@ -514,9 +544,9 @@ Categories
 			content: url("../img/filter-title-hide.svg");
 			width:4.6px;
 			height:7.97px;
-			position:absolute;
+			position:relative;
 			top:-1.5px;
-			right:0;
+			margin-left:26px;
 		}	
 		&:checked {
 			display:none;
@@ -548,7 +578,9 @@ Categories
 	cursor:pointer;
 	margin-bottom: 10px;
 	color:#262626;
+	font-weight: 400;
 	font-size:14px;
+	font-family: "Roboto";
 	line-height:16.41px;
 	position:relative;
    }
@@ -594,13 +626,15 @@ Categories
  	  	background-color: #FF5833;
 }
    .custom-checkbox:checked+label::after {
-		content: url("../img/checkbox-checked.svg");
+		content: "";
 		display: inline-block;
-		position:absolute;
+		position: absolute;
 		width: 7.32px;
 		height: 5.07px;
 		left: 3.5px;
-		top:0;
+		top:4.95px;
+		background: url(../img/checkbox-checked.svg);
+		background-size: 100%;
 	}
 
 .applyied {
@@ -619,6 +653,7 @@ Categories
 		height: 24px;
 		border-radius:50px;
 		font-size:14px;
+		font-family: "Roboto";
 		line-height: 16.41px;
 		display:flex;
 		align-items:center;
@@ -640,6 +675,8 @@ Categories
 		background-color:#FF5833;
 		color: #ffffff;
 		margin-right:10px;
+		font-weight: 400;
+		font-size:14px;
 		&:after{
 			content: url("../img/close.svg");
 		}
@@ -648,6 +685,9 @@ Categories
 		width:123px;
 		background-color:#E5E0E0;
 		color:#262626;
+		font-weight:400;
+		font-family:"Roboto";
+		font-size:14px;
 		&:after{
 			content:url("../img/clear-close.svg");
 		}
@@ -659,18 +699,24 @@ Categories
 	width: 180px;
 	height:30px;	
 	border:2px solid #808080;
+	padding:1px;
+	border-radius:5px;
 	position:relative;
 	color:#404040;
 	font-size:14px;
+	font-family: "Roboto";
 	box-sizing:border-box;
+	margin-top:-2px;
 	& select{
-		padding: 0 10px 0 8px;
+		padding: 0 0 0 5px;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		z-index: 2;
 		width:100%;
 		height:100%;
 		font-size:14px;
+		font-family: "Roboto";
+		font-weight: 400;
 		line-height:16.41px;
 		color:#404040;
 		&::-ms-expand {
@@ -678,17 +724,19 @@ Categories
 		}
 	}
 	&:after {
-		content: url(../img/arrow-down.svg);
+		content:"";
 		display:inline-block;
 		position: absolute;
 		right: 0;
 		width: 12px;
 		height: 8px;
 		z-index:1;
-		right:10px;
+		right:7px;
 		pointer-events: none;
 		box-sizing: border-box;
-		top:6px;
+		top:9px;
+		background: url(../img/arrow-down.svg);
+		background-size: 100% 100%;
 	}
 	&__option{
 		padding:20px;
@@ -726,9 +774,10 @@ Categories
 		&__title {
 			display:block;
 			font-size:18px;
+			font-family: "Roboto";
+			font-weight:700;
 			line-height:19.8px;
 			color:#186DBC;
-			font-family:"Roboto-Medium";
 			margin-bottom:7px;
 		}
 
@@ -736,7 +785,8 @@ Categories
 			color:#999999;
 			font-size:16px;
 			line-height:18.75px;
-			font-weight:500;
+			font-weight:600;
+			font-family:"Roboto";
 		}
 		&__mark{
 			color:#262626;
@@ -749,6 +799,8 @@ Categories
 			position:relative;
 			top:6px;
 			font-size:14px;
+			font-family: "Roboto";
+			font-weight:500;
 			line-height:16.41px;
 			color:#999999;
 		}
@@ -764,15 +816,16 @@ Categories
 		justify-content: left;
 		&__title {
 			font-size:14px;
+			font-family: "Roboto";
 			line-height:16.41px;
 			font-weight:500;
 			color:#262626;
-			font-family:"Roboto-Medium";
+			
 			width:100%;
 		}
 		
-
-		&__call ,&__chat{
+	}
+		&-call ,&-chat{
 			color:#ffffff;
 			border-radius:5px;
 			position:relative;
@@ -782,15 +835,18 @@ Categories
 			box-sizing:border-box;
 			margin-top:112px;
 			font-size: 14px;
-			font-weight:600;
-			line-height: 16.41px;
+			&__text{
+				font-size:14px;
+				font-family:"Roboto";
+				font-weight:600;
+			}
 			&:before{
 				content: url("../img/btn-call.svg");
 				display:inline-block;
 				position:relative;
 			}
 		}
-		&__call{
+		&-call{
 			background:linear-gradient( #6BBC38 0% #7BD941  100%);
 			width: 120px;
 			height:35px;
@@ -802,7 +858,7 @@ Categories
 			}
 		}
 
-		&__chat {
+		&-chat {
 			width:78px;
 			height:35px;
 			background:linear-gradient(#4588E5 0% #4DA6FF 100%);
@@ -814,7 +870,6 @@ Categories
 				margin-right:3.5px;				
 			}
 		}
-	}
 }
 
 /*
@@ -822,8 +877,9 @@ Categories
 Media
 ***
 */
-@media(max-width:1420px){
+@media(max-width:1220px){
 	.header{
+		
 		&-block {
 			&__search{
 				margin-right: 28%;
