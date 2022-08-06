@@ -496,7 +496,6 @@ Categories
 		padding-top:7px;
 		margin-top:13px;
 		width:204px;
-		height:136px;
 	}
 	&__link{
 		font-size: 14px;
@@ -505,8 +504,7 @@ Categories
 		padding-bottom:8px;
 		cursor:pointer;
 		font-weight:400;
-		transition: all 0.3s ease;
-		&.active,&:hover{
+		&.active{
 			background:#FF5833;
 			height:24px;
 			width:224px;
@@ -518,7 +516,14 @@ Categories
 			box-sizing: border-box;
 			padding:4px 0 4px 10px;
 			margin-bottom:4px;
+			&:hover{
+			color:#ffffff;
+			}
 		}
+		&:hover{
+			color:#FF5833;
+		}
+
 	
 
 	}
@@ -544,9 +549,6 @@ Categories
 		padding-bottom:10px;
 		margin:31px 0 11px 0;
 		cursor:pointer;
-		&:first-child{
-			margin:27px 0 11px 0;
-		}
 		&.hide:after{
 			content: url("../img/filter-title.svg");
 		}
@@ -645,7 +647,7 @@ Categories
 		position: absolute;
 		width: 9.32px;
 		height: 7.07px;
-		left: 3.5px;
+		left: 2.2px;
 		top:4.95px;
 		background: url(../img/checkbox-checked.svg);
 		background-size: 100%;
@@ -856,7 +858,7 @@ Categories
 			&__text{
 				font-size:14px;
 				font-family:"Roboto";
-				font-weight:600;
+				font-weight:500;
 			}
 			&:before{
 				content: url("../img/btn-call.svg");
