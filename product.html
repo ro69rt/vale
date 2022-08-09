@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Vale</title>
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="content">
+		<header class="header sticky">
+			<div class="header-row">
+				<div class="header-block header-block__logo">
+					<img src="img/logo.svg" alt="logo" class="header-logo">
+				</div>
+				<div class="header-block header-block__search">
+					<form class="header-search">
+						<input type="text" placeholder="Я ищу..." class="header-search__input">
+						<button class="header-search__btn">Поиск</button>
+					</form>
+				</div>
+				<div class="header-block header-block__btn">
+					<div class="header-btn header-sign">
+						<img class="header-sign__img" src="img/user_icon.png" alt="">
+						<span class="header-sign__text">Войти</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="breadcrumb">
+			<ul class="breadcrumb-list">
+				<li class="breadcrumb-link">Главная</li>
+				<li class="breadcrumb-link">Банки</li>
+			</ul>
+		</div>
+
+		<div class="wrapper wrapper-product">
+			<div class="card">
+				<div class="product">
+					<div class="product-left">
+						<img src="img/product-max.png" alt="" class="product-left__img">
+						<div class="swiper product-swiper">
+							<div class="product-slider swiper-wrapper">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+								<img class="swiper-slide" src="img/product.png" alt="product" class="product-slider__img">
+							</div>
+							<!--	 If we need navigation buttons -->
+							<div class="product-swiper__button-prev"></div>
+							<div class="product-swiper__button-next"></div>
+						</div>
+					</div>
+
+					<div class="product-center">
+						<span class="product-center__title">Банка стеклянная 82мм 500мл для консервирования, хранения сыпучих</span>
+						<div class="product-center__block">
+							<div class="product-block">
+								<span class="product-block__price">₽36/шт.</span>
+								<span class="product-block__count">1,000-1,999</span>
+								<span class="product-block__text">шт.</span>
+							</div>
+
+							<div class="product-block">
+								<span class="product-block__price">₽36/шт.</span>
+								<span class="product-block__count">1,000-1,999</span>
+								<span class="product-block__text">шт.</span>
+							</div>
+
+							<div class="product-block">
+								<span class="product-block__price">₽36/шт.</span>
+								<span class="product-block__count">1,000-1,999</span>
+								<span class="product-block__text">шт.</span>
+							</div>
+
+							<div class="product-block">
+								<span class="product-block__price">₽36/шт.</span>
+								<span class="product-block__count">1,000-1,999</span>
+								<span class="product-block__text">шт.</span>
+							</div>
+	
+						</div>
+
+					<div class="product-rectangle">
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+						<div class="product-rectangle__block"></div>
+					</div>
+				</div>
+
+				<div class="product-right">
+					<div class="product-owner">
+						<span class="product-owner__title">ООО “Стеклянные банки”</span>
+						<img src="img/flag_rus.png" alt="" class="product-owner__flag">
+						<span class="product-owner__address">Владикавказ</span>
+						<button class="product-owner__call">Позвонить</button>
+						<button class="product-owner__chat">Написать</button>
+					</div>
+
+					<div class="schedule">
+						<span class="schedule__text">График цен</span>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+		<footer class="footer"></footer>
+
+	</div>
+
+
+	<script src="script/main.js"></script>
+	<script type="module">
+		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+		const swiper = new Swiper('.product-swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			slidesPerView: '5',
+			loop: true,
+			autoplay: {
+				delay: 100999990,
+			},
+			navigation: {
+				nextEl: '.product-swiper__button-next',
+				prevEl: '.product-swiper__button-prev',
+			},
+
+		});
+	</script>
+</body>
+
+</html>

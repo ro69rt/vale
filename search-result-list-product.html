@@ -183,9 +183,14 @@
 
 	<div class="applyied">
 		<div class="applyied-block">
-			
+			<div class="applyied-result">
+				<button class="applyied-btn active"><span class="applyied-btn__text">Товары</span></button>
+				<button class="applyied-btn"><span class="applyied-btn__text">Продавцы</span></button>
+				<span class="applyied-text">По запросу "Банки" найдено <span class="applyied-text__orange">999</span> товаров</span>
+			</div>
 
 			<div class="categories-applyied">
+	
 				<button class="categories-applyied__btn">Опция #1</button>
 				<button class="categories-applyied__btn active">Опция #2</button>
 				<button class="categories-applyied__btn">Опция #3</button>
@@ -193,57 +198,81 @@
 				<button class="categories-applyied__clear">Очистить всё</button>
 				
 				<div class="categories-select">
-						<select>
-							<option class="categories-select__option" value="Naples">Сначала дешёвые</option>
-							<option class="categories-select__option" value="London">2</option>
-							<option class="categories-select__option" value="Berlin">3</option>
-							<option class="categories-select__option" value="New York">4</option>
-							<option class="categories-select__option" value="Frattamaggiore">5</option>
-						</select>
+					<select>
+						<option class="categories-select__option" value="Naples">Сначала дешёвые</option>
+						<option class="categories-select__option" value="London">2</option>
+						<option class="categories-select__option" value="Berlin">3</option>
+						<option class="categories-select__option" value="New York">4</option>
+						<option class="categories-select__option" value="Frattamaggiore">5</option>
+					</select>
+				</div>
+
+				<div class="sorting">
+					<svg class="sorting-icon sorting-list active" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="13" y="23" width="13" height="2" fill="#FF5833" />
+						<rect x="13" y="19" width="13" height="2" fill="#FF5833" />
+						<rect x="13" y="15" width="13" height="2" fill="#FF5833" />
+						<rect y="14" width="12" height="12" rx="3" fill="#FF5833" />
+						<rect x="13" y="9" width="13" height="2" fill="#FF5833" />
+						<rect x="13" y="5" width="13" height="2" fill="#FF5833" />
+						<rect x="13" y="1" width="13" height="2" fill="#FF5833" />
+						<rect width="12" height="12" rx="3" fill="#FF5833" />
+					</svg>
+
+					<svg class="sorting-icon sorting-gallery" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="14" y="14" width="12" height="12" rx="3" fill="#E5E0E0" />
+						<rect y="14" width="12" height="12" rx="3" fill="#E5E0E0" />
+						<rect x="14" width="12" height="12" rx="3" fill="#E5E0E0" />
+						<rect width="12" height="12" rx="3" fill="#E5E0E0" />
+					</svg>
+
+
 				</div>
 			</div>
 		</div>
 
 		<div class="categories">
-			<div class="product">
-						<div class="product-left">
-							<img src="img/product.png" alt="" class="product-left__img">
+			<div class="list">
+				<div class="product">
+							<div class="product-left">
+								<img src="img/product.png" alt="" class="product-left__img">
+							</div>
+						<div class="product-center">
+							<span class="product-center__title">Банка стеклянная 82мм 500мл для консервирования, хранения сыпучих</span>
+							<span class="product-center__text">Цена: <span class="product-center__text product-center__mark">от ₽24/шт.</span></span>
+							<span class="product-center__text">Мин. заказ:  <span class="product-center__text product-center__mark">1000 шт.</span></span>
+							<span class="product-center__description">Стеклянная банка для консервации, хранения. Имеет практичную и удобную форму, изготовлена из прочного качественного
+							стекла. Вместимость стеклянной тары 500 мл, высота 121 мм, ширина дна 78 мм. Горлышко безопасно отшлифовано. Можно
+							хранить продукты питания, а также использовать для консервирования. Банки высшего первого сорта, подходят для работы в
+							автоклаве...</span>
 						</div>
-					<div class="product-center">
-						<span class="product-center__title">Банка стеклянная 82мм 500мл для консервирования, хранения сыпучих</span>
-						<span class="product-center__text">Цена: <span class="product-center__text product-center__mark">от ₽24/шт.</span></span>
-						<span class="product-center__text">Мин. заказ:  <span class="product-center__text product-center__mark">1000 шт.</span></span>
-						<span class="product-center__description">Стеклянная банка для консервации, хранения. Имеет практичную и удобную форму, изготовлена из прочного качественного
-						стекла. Вместимость стеклянной тары 500 мл, высота 121 мм, ширина дна 78 мм. Горлышко безопасно отшлифовано. Можно
-						хранить продукты питания, а также использовать для консервирования. Банки высшего первого сорта, подходят для работы в
-						автоклаве...</span>
-					</div>
-					<div class="product-right">
-						<span class="product-right__title">Наименование организации</span>
+						<div class="product-right">
+							<span class="product-right__title">Наименование организации</span>
 
-						<button class="product-call"><span class="product-call__text">Позвонить</span></button>
-						<button class="product-chat"><span class="product-chat__text">Чат</span></button>
-					</div>
-				</div>
-
-			<div class="product">
-						<div class="product-left">
-							<img src="img/product.png" alt="" class="product-left__img">
+							<button class="product-call"><span class="product-call__text">Позвонить</span></button>
+							<button class="product-chat"><span class="product-chat__text">Чат</span></button>
 						</div>
-					<div class="product-center">
-						<span class="product-center__title">Банка стеклянная 82мм 500мл для консервирования, хранения сыпучих</span>
-						<span class="product-center__text">Цена: <span class="product-center__text product-center__mark">от ₽24/шт.</span></span>
-						<span class="product-center__text">Мин. заказ:  <span class="product-center__text product-center__mark">1000 шт.</span></span>
-						<span class="product-center__description">Стеклянная банка для консервации, хранения. Имеет практичную и удобную форму, изготовлена из прочного качественного
-						стекла. Вместимость стеклянной тары 500 мл, высота 121 мм, ширина дна 78 мм. Горлышко безопасно отшлифовано. Можно
-						хранить продукты питания, а также использовать для консервирования. Банки высшего первого сорта, подходят для работы в
-						автоклаве...</span>
 					</div>
-					<div class="product-right">
-						<span class="product-right__title">Наименование организации</span>
 
-						<button class="product-call"><span class="product-call__text">Позвонить</span></button>
-						<button class="product-chat"><span class="product-chat__text">Чат</span></button>
+				<div class="product">
+							<div class="product-left">
+								<img src="img/product.png" alt="" class="product-left__img">
+							</div>
+						<div class="product-center">
+							<span class="product-center__title">Банка стеклянная 82мм 500мл для консервирования, хранения сыпучих</span>
+							<span class="product-center__text">Цена: <span class="product-center__text product-center__mark">от ₽24/шт.</span></span>
+							<span class="product-center__text">Мин. заказ:  <span class="product-center__text product-center__mark">1000 шт.</span></span>
+							<span class="product-center__description">Стеклянная банка для консервации, хранения. Имеет практичную и удобную форму, изготовлена из прочного качественного
+							стекла. Вместимость стеклянной тары 500 мл, высота 121 мм, ширина дна 78 мм. Горлышко безопасно отшлифовано. Можно
+							хранить продукты питания, а также использовать для консервирования. Банки высшего первого сорта, подходят для работы в
+							автоклаве...</span>
+						</div>
+						<div class="product-right">
+							<span class="product-right__title">Наименование организации</span>
+
+							<button class="product-call"><span class="product-call__text">Позвонить</span></button>
+							<button class="product-chat"><span class="product-chat__text">Чат</span></button>
+						</div>
 					</div>
 				</div>
 
