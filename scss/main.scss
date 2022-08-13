@@ -11,14 +11,17 @@
 	}
 }
 
-body{
+html,body{
 	background: #F7F5F5;
 	overflow-x: hidden;
 	font-family: "Roboto";
+	height:100%;
 }
 .content{
 	position:relative;
-	padding-bottom:320px;
+	min-height: 100%;
+	display:flex;
+	flex-direction: column;
 }
 .content-row{
 		width: 1600px;
@@ -140,7 +143,7 @@ body{
 
 .wrapper {
 	display: flex;
-	margin-top:20px;
+	flex:1 1 auto;
 	@extend %container;
 	&-slider {
 		width: 692px;
@@ -427,14 +430,7 @@ body{
 }
 
 
-.footer{
-	width:100%;
-	background:#ffffff;
-	height:300px;
-	margin-top:20px;
-	position:absolute;
-	bottom:0;
-}
+
 
 
 
@@ -449,6 +445,7 @@ Categories
 .breadcrumb{
 	@extend %container;
 	margin-top:18px;
+	margin-bottom:18px;
 	&-list{
 		display:flex;
 		width:100%;
@@ -477,7 +474,7 @@ Categories
 }
 .categories-sidebar {
 	width:244px;
-	height:1482px;
+	height:auto;
 	background:#fff;
 	padding:14px 20px 20px 20px;
 	box-sizing: border-box;
@@ -584,6 +581,7 @@ Categories
    	position: absolute;
    	z-index: -1;
    	opacity: 0;
+	cursor:pointer;
    }
 
    /* для элемента label, связанного с .custom-checkbox */
@@ -616,6 +614,7 @@ Categories
    	background-position: center center;
    	background-size: 50% 50%;
 	box-sizing:border-box;
+	curspor:pointer;
    }
   
 
@@ -651,6 +650,7 @@ Categories
 		top:4.95px;
 		background: url(../img/checkbox-checked.svg);
 		background-size: 100%;
+		cursor:pointer;
 	}
 
 .applyied {
@@ -758,7 +758,7 @@ Categories
 }
 
 .categories {
-	height:1400px;
+	height:1635px;
 	margin-top:20px;
 	background:#ffffff;
 	box-shadow: 0 0 2px rgba(204, 204, 204, 0.6);
@@ -794,6 +794,7 @@ Categories
 			line-height:19.8px;
 			color:#186DBC;
 			margin-bottom:7px;
+			margin-top:4px;
 		}
 
 		&__text {
@@ -829,13 +830,14 @@ Categories
 		display:flex;
 		flex-wrap:wrap;
 		justify-content: left;
+		position:relative;
 		&__title {
 			font-size:14px;
 			font-family: "Roboto";
 			line-height:16.41px;
 			font-weight:500;
 			color:#262626;
-			
+			margin-top:7px;
 			width:100%;
 		}
 		
@@ -848,8 +850,9 @@ Categories
 			justify-content: center;
 			align-items: center;
 			box-sizing:border-box;
-			margin-top:112px;
 			font-size: 14px;
+			position: absolute;
+			bottom: 20px;
 			&__text{
 				font-size:14px;
 				font-family:"Roboto";
@@ -879,14 +882,15 @@ Categories
 		&-chat {
 			width:78px;
 			height:35px;
-			margin-left:12px;
 			position:relative;
 			border-radius: 5px;
 			background:#fff;
 			background: linear-gradient(#F00B1D 0%, #FF5833 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-
+			position: absolute;
+			bottom: 20px;
+			right:20px;
 			&:after{
 				content: "";
 				position: absolute;
@@ -921,7 +925,7 @@ Categories
 & .gallery .product{
 	width:216px;
 	margin-bottom:30px;
-	height:300px;
+	height:303px;
 	position:relative;
 	&__img {
 		width:100%;
@@ -1217,7 +1221,7 @@ Search-result
 		border-bottom:1px solid #E5E0E0;
 	}
 	&-btn {
-		margin-right:27px;
+		margin-right:15px;
 		width:110px;
 		height:32px;
 		background:#ffffff;
@@ -1234,7 +1238,7 @@ Search-result
 			font-size:16px;
 			line-height:18.75px;
 			font-family:"Roboto";
-			font-weight:600;
+			font-weight:500;
 		}
 	}
 
@@ -1340,6 +1344,7 @@ Search-result
 			height:35px;
 			display:flex;
 			justify-content:center;
+			border-radius:5px;
 			&:before{
 				content: url("../img/btn-call.svg");
 				width: 9.33px;
@@ -1448,7 +1453,23 @@ Search-result
 
 
 
+.footer {
+	width: 100%;
+	background: #F7F5F5;
+	height: 90px;
+	padding-top:47px;
+	box-sizing:border-box;
+	display: flex;
+	justify-content: center;
 
+	&-text {
+		color: #262626;
+		font-family: "Roboto";
+		font-size: 12px;
+		line-height: 14.52px;
+		font-weight: 400;
+	}
+}
 
 
 /*
