@@ -401,6 +401,7 @@
 
 
 <script>
+/*Горизонтальная прокрутка*/
 window.addEventListener('DOMContentLoaded', (event) => {
      var x = document.querySelectorAll(".products-right");
      for(i=0;i<x.length; i++){
@@ -423,21 +424,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		}
         });
 
-	function scrolled(o) {
+function scrolled(o) {
 
 		if (o.offsetWidth + o.scrollLeft == o.scrollWidth) {
 			let jars = document.querySelector(".jars-shadow");
 			jars.classList.remove("jars-shadow__right");
 		}
-
-
 		if (o.offsetWidth + o.scrollLeft < o.scrollWidth ){
 			let jars = document.querySelector(".jars-shadow");
 			jars.classList.add("jars-shadow__right");
 		}
-
-	
-		
 	}
 </script>
 </body>
