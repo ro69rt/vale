@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Vale</title>
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="content">
+<header class="header sticky">
+		<div class="header-row">
+			<div class="header-block header-block__logo">
+				<img src="img/logo.svg" alt="logo" class="header-logo">
+			</div>
+			<div class="header-block header-block__search">
+				<form class="header-search">
+					<input type="text" placeholder="Я ищу..." class="header-search__input">
+					<button class="header-search__btn">Поиск</button>
+				</form>
+			</div>
+			<div class="header-block header-block__btn">
+				<div class="header-btn header-sign">
+					<img class="header-sign__img" src="img/user_icon.png" alt="">
+					<span class="header-sign__text">Войти</span>
+				</div>
+			</div>
+		</div>
+</header>
+
+<div class="banner">
+	<div class="banner-bg">
+		<img src="img/company/banner-image.png" alt="" class="banner-bg__img">
+	</div>
+	<div class="banner-info">
+		<div class="banner-info__left">
+			<img src="img/company/company-logo.svg" alt="logo" class="banner-info__logo">
+			<div class="banner-info__text">
+				<span class="banner-info__title">ООО “ТАМБОВКОНСЕРВ”</span>
+				<span class="banner-info__description"></span>
+			</div>
+		</div>
+		<div class="banner-info__right">
+			<div class="banner-search">
+				<input placeholder="Искать в этом магазине..." type="text" class="banner-search__input">
+				<button class="banner-search__btn">Поиск</button>
+			</div>
+			<input type="text" class="banner-input">
+		</div>
+	</div>
+
+	<div class="banner-tabs">
+		<ul class="banner-tabs__list">
+			<li class="banner-tabs__link">Главная</li>
+			<li class="banner-tabs__link">Товары</li>
+			<li class="banner-tabs__link active">О компании</li>
+		</ul>
+	</div>
+</div>
+
+<div class="company content-row">
+	<div class="wrapper">
+		<div class="wrapper-sidebar sidebar">
+			<ul class="sidebar-list">
+				<li class="sidebar-link">Описание</li>
+				<li class="sidebar-link">Производственные мощности</li>
+				<li class="sidebar-link">Контроль качества</li>
+				<li class="sidebar-link">Сертификаты</li>
+				<li class="sidebar-link">Руководство компании</li>
+				<li class="sidebar-link">Услуги и поддержка</li>
+			</ul>
+		</div>
+
+		<div class="company-description">
+			<span class="company-description__title">Описание</span>
+		<!-- Slider start -->
+			<div class="wrapper-slider swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><span class="slider-text">Карусель с баннерами</span></div>
+					<div class="swiper-slide"><span class="slider-text">Slide 2</span></div>
+					<div class="swiper-slide"><span class="slider-text">Slide 3</span></div>
+					<div class="swiper-slide"><span class="slider-text">Slide 4</span></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+		<!-- Slider end -->
+			
+			<span class="company-description__text">
+				Предприятие ООО «Тамбовконсерв» осуществляет производство металлических крышек для консервирования премиум-класса СКО
+				1-82 и СКО 1-58 под зарегистрированным брендом «Тамбовчанка» с 2005 года. Несмотря на большую конкуренцию, предприятие
+				постоянно увеличивает объемы производства. Благодаря тому, что качество, внешний вид, а также современная упаковка и
+				тара отвечают требованиям даже самых взыскательных клиентов. Продукция ООО «Тамбовконсерв» — это гарантия высокого
+				качества, которое обеспечивается применением только сертифицированных материалов и непрерывным контролем инженеров на
+				всех этапах производства.
+				
+				За долгие годы работы на предприятии сформировался высококвалифицированный коллектив, а это является показателем
+				стабильности предприятия.
+				
+				Наше предприятие — надежный партнер и предлагает Вам свое сотрудничество по поставкам производимых им товаров. Отгрузка
+				товара может осуществляться как самовывозом со склада, так и нашим транспортом в различные регионы. Работаем
+				ответственно и оперативно. Находим индивидуальный подход к каждому клиенту.
+			</span>
+		</div>
+
+	
+	</div>
+	
+</div>
+
+
+
+<footer class="footer">
+	<span class="footer-text">© 2022 VALE. Все права защищены.</span>
+</footer>
+
+</div>
+
+
+
+
+<script type="module">
+	import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+	const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			autoplay: {
+			delay: 52222222000,
+			},
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable:'true'
+			},
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		
+		});
+</script>
+</body>
+</html>
