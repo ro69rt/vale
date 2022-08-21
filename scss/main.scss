@@ -59,7 +59,8 @@ body{
 		@extend %container;
 		padding-top:15px;
 		display:flex;
-		position:relative;
+		position:fixed;
+		height:40px;
 	}
 	&-block {
 		&__logo{
