@@ -1844,7 +1844,7 @@ Banner
 /*Bottom mobile menu*/
 .menu {
 width:100%;
-position:sticky;
+position:fixed;
 bottom:0;
 height:56px;
 box-sizing:border-box;
@@ -2184,6 +2184,8 @@ Media
 		height: 50px;
 		display: flex;
 		align-items: center;
+		position:relative;
+		padding:20px 0px 20px 18px;
 		&__bottles{
 			background:#A6D8D4;
 		}
@@ -2192,7 +2194,7 @@ Media
 		}
 		&__btn {
 			position: absolute;
-			right: 28px;
+			right: 23px;
 			color:#666666;
 			background:none;
 			font-weight:400;
@@ -2264,6 +2266,11 @@ Media
 	width:85px;
 }
 	.products{
+		&-left{
+			&__title{
+				font-size:14px;
+			}
+		}
 		& .jars{
 			&-right {
 			}
