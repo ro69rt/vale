@@ -46,6 +46,8 @@ body{
 	box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.6);
 	height: 70px;
 	z-index:1;
+	display:flex;
+	justify-content:center;
 	&.sticky{
 		position: sticky;
 		top: 0;
@@ -54,6 +56,16 @@ body{
 	}
 	&-modal{
 		display:none;
+		&__fixed{
+			display:flex;
+			width:100%;
+			height:50px;
+			& .search-block{
+				left:0;
+				top:55px;
+				height:100vh;
+			}
+		}
 	}
 	&-row{
 		@extend %container;
@@ -2035,6 +2047,7 @@ Media
 	height:56px;
 	&-row{
 		padding-top:10px;
+		width:100%;
 	}
 	&-modal{
 		display:none;
@@ -2051,6 +2064,9 @@ Media
 			border:0;
 			box-shadow:none;
 			overflow:scroll;
+			height:100vh;
+			left:0;
+			top:55px;
 			&__list{
 				padding-bottom:100px;
 			}
@@ -2132,10 +2148,25 @@ Media
 	}
 	&-search{
 		width:100%;
+		position:relative;
+		display:inline-flex;
+			&:before{
+				content:url("../img/icons/Search.svg");
+				width:16px;
+				height:16px;
+				position: relative;
+				top: 10px;
+				left: 34px;
+				z-index: 2;
+			}
 		&__input{
 			background:#F2F2F2;
 			border:0;
 			height:36px;
+			position:relative;
+			left:0;
+			top:0;
+			padding-left:40px;
 		}
 		&__btn{
 			display:none;
@@ -2220,10 +2251,9 @@ Media
 		&-right{
 			box-shadow: 0px 0px 2px rgba(204, 204, 204, 0.6);
 			border-radius: 0 0 10px;
-			display: flex;
 			width:100%;
 			overflow:hidden;
-			height:170px;
+			height:auto;
 			padding:10px 5px;
 		}
 		&-block{
