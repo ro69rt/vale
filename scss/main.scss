@@ -52,7 +52,7 @@ body{
 		position: sticky;
 		top: 0;
 		width: 100%;
-		z-index:3;
+		z-index:4;
 	}
 	&-modal{
 		display:none;
@@ -606,8 +606,10 @@ body{
 					display:inline-block;
 				}
 			}
+			&__mobile{
+				display:none;
+			}
 			&__pcs{
-				
 			}
 
 			&__img{
@@ -1861,7 +1863,7 @@ position:fixed;
 bottom:0;
 height:56px;
 box-sizing:border-box;
-padding-top:10px;
+padding:10px 0 7px 0;
 background:#ffffff;
 z-index:5;
 &-list {
@@ -2024,7 +2026,7 @@ Media
 				&__img{
 					height:120px;
 				}
-				&__title,&__price,&__description{
+				&__title,&__price,&__description,&__pcs{
 					font-size: 12px;
 					line-height: 14.06px;
 					display:inline-block;
@@ -2032,9 +2034,15 @@ Media
 				&__price{
 					display:block;
 				}
+				&__pcs{
+					margin-left:3px;
+				}
 				&__desktop {
 					display: none;
 				}	
+				&__mobile{
+					display:flex;
+				}
 			}
 		}
 	}
@@ -2046,8 +2054,9 @@ Media
 .header{
 	height:56px;
 	&-row{
-		padding-top:10px;
+		padding:10px 0;
 		width:100%;
+		max-width:100%;
 	}
 	&-modal{
 		display:none;
@@ -2115,13 +2124,11 @@ Media
 		}
 
 	}
-	&-row{
-		width:100%;
-		max-width:100%;
-	}
+
 	&-logo{
-		width: 60.31px;
-		height: 18.67px;
+		width: 100%;
+		height: 100%;
+		margin-top:0;
 	}
 	&-block{
 		&__back{
@@ -2129,10 +2136,13 @@ Media
 		}
 		&__logo{
 			margin-left:10px;
+			margin-top:8px;
+			width: 60.31px;
+			height: 18.67px;
 		}
 		&__search{
 			width:100%;
-			margin-left: 20px;
+			margin-left: 14.69px;
 			margin-right: 10px;
 		}
 		& .search-block{
@@ -2148,18 +2158,20 @@ Media
 	}
 	&-block__search{
 		width:100%;
+		height: 36px;
 	}
 	&-search{
 		width:100%;
 		position:relative;
 		display:inline-flex;
+		height:36px;
 			&:before{
 				content:url("../img/icons/Search.svg");
 				width:16px;
 				height:16px;
-				position: relative;
+				position: absolute;
 				top: 10px;
-				left: 34px;
+				left: 16px;
 				z-index: 2;
 			}
 		&__input{
@@ -2192,6 +2204,16 @@ Media
 		height:171px;
 		margin-left:0;
 	}
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+	display:none;
+}
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction{
+	bottom:7px;
 }
 .slider-text{
 	font-size:17px;
@@ -2253,11 +2275,11 @@ Media
 		flex-wrap: wrap;
 		&-right{
 			box-shadow: 0px 0px 2px rgba(204, 204, 204, 0.6);
-			border-radius: 0 0 10px;
+			border-radius: 0 0 10px 10px;
 			width:100%;
 			overflow:hidden;
 			height:auto;
-			padding:10px 5px;
+			padding:10px 5px 0 5px;
 		}
 		&-block{
 			width:33%;
