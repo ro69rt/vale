@@ -30,6 +30,13 @@
 	-o-user-select: none;
 	user-select: none;
 }
+*::selection {
+	color: transparent;
+}
+
+*::-moz-selection {
+	color: transparent;
+}
 html,body{
 	background: #F7F5F5;
 	overflow-x: hidden;
