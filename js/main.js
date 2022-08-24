@@ -33,3 +33,4 @@ headerBack.addEventListener('click', function (event) {
 
 mediaQuery.addListener(handleTabletChange)
 handleTabletChange(mediaQuery)
+
