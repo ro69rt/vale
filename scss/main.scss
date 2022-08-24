@@ -49,7 +49,7 @@ body{
 	display:flex;
 	justify-content:center;
 	&.sticky{
-		position: sticky;
+		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index:4;
@@ -1975,6 +1975,7 @@ Media
 	}
 	.content-row{
 		margin-bottom:10px;
+		margin-top:57px;
 	}
 	.wrapper{
 		&-sidebar{
