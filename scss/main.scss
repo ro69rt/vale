@@ -10,17 +10,19 @@
 		max-width:92%;
 	}
 	@media(max-width:992px){
-		width:94%;
-		max-width:94%;
+		width:95%;
+		max-width:95%;
 	}
 }
-
+* {
+	font-family: "Roboto", sans-serif;
+}
 html,body{
 	background: #F7F5F5;
 	overflow-x: hidden;
-	font-family: "Roboto",sans-serif;
 	height:100%;
 }
+
 body{
 	&.lock{
 		overflow:hidden;
@@ -588,7 +590,7 @@ body{
 				color: #404040;
 			}
 			&__title{
-				margin-top:7px;
+				margin-top:6px;
 				display:block;
 			}
 			&__price{
@@ -597,11 +599,9 @@ body{
 				font-size:16px;
 				color:#262626;
 				display:block;
-				margin-top:1px;
 			}
 			&__description{
 				color:#999999;
-				margin-top:1px;
 				&:first-letter{
 					text-transform:uppercase;
 					display:inline-block;
@@ -1984,7 +1984,7 @@ Media
 		&-slider{
 			width:70%;
 		}
-		margin-top:10px;
+		margin-top:9px;
 	}
 	
 	.jars{
@@ -2083,6 +2083,7 @@ Media
 			}
 			&__link{
 				padding-left:20px;
+				box-sizing:border-box;
 			}
 			&__top{
 				width:100%;
@@ -2109,16 +2110,20 @@ Media
 				&__btn{
 					width: 110px;
 					height: 30px;
-					background: linear-gradient(78.83deg, #F00B1D 0%, #FF5833 100%);
-					border-radius: 8px;
 					font-weight: 500;
 					font-size: 14px;
 					line-height: 16px;
 					display: flex;
 					align-items: center;
-					color:#ffffff;
-					margin-right:32px;
+					margin-right:6px;
+					color: #262626;
 					justify-content:center;
+					background:none;
+					&.active{
+						background: linear-gradient(78.83deg, #F00B1D 0%, #FF5833 100%);
+						border-radius: 8px;
+						color: #ffffff;
+					}
 				}
 			}
 
@@ -2128,8 +2133,8 @@ Media
 	}
 
 	&-logo{
-		width: 100%;
-		height: 100%;
+		width: 60.31px;
+		height: auto;
 		margin-top:0;
 	}
 	&-block{
@@ -2253,14 +2258,14 @@ Media
 		}
 		&__btn {
 			position: absolute;
-			right: 23px;
+			right: 24px;
 			color:#666666;
 			background:none;
 			font-weight:400;
 			width:auto;
 			height:auto;
 			margin:0;
-			top:17px;
+			top:18px;
 			&:after{
 				content:url("../img/icons/right.svg");
 				width:4px;
