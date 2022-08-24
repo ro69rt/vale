@@ -73,6 +73,7 @@ body{
 		display:flex;
 		position:fixed;
 		height:40px;
+		z-index:3;
 	}
 	&-block {
 		&__logo{
