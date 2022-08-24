@@ -16,6 +16,19 @@
 }
 * {
 	font-family: "Roboto", sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+*:focus{
+	background:none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 html,body{
 	background: #F7F5F5;
