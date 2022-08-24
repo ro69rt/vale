@@ -18,13 +18,11 @@
 	font-family: "Roboto", sans-serif;
 }
 
-*::selection {
+a::selection {
 	color: transparent;
 }
 
-*::-moz-selection {
-	color: transparent;
-}
+
 html,body{
 	background: #F7F5F5;
 	overflow-x: hidden;
