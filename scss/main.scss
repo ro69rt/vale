@@ -2096,12 +2096,13 @@ Media
 			&__link{
 				padding-left:20px;
 				box-sizing:border-box;
+				border-top: 1px solid #F2F2F2;
 			}
 			&__top{
 				width:100%;
 				display:flex;
 				align-items:center;
-				margin-bottom:17px;
+				margin-bottom:10px;
 			}
 			&__bottom{
 				& .search-block__link {
@@ -2235,8 +2236,8 @@ Media
 	bottom:7px;
 }
 .slider-text{
-	font-size:17px;
-	line-height:16.41px;
+	font-size: 14px;
+	line-height: 16px;
 }
 .swiper-pagination-bullet{
 	width:6px;
@@ -2298,7 +2299,7 @@ Media
 			width:100%;
 			overflow:hidden;
 			height:auto;
-			padding:10px 5px 0 5px;
+			padding:10px 6px 0 5px;
 		}
 		&-block{
 			width:33%;
