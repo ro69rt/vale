@@ -201,7 +201,7 @@ body{
 			background: #FFFFFF;
 			border: 2px solid #F00B1D;
 			border-radius: 50px;
-			padding-left: 26px;
+			padding-left: 23px;
 			box-sizing: border-box;
 			font-size: 14px;
 			
@@ -336,11 +336,13 @@ body{
 	&-link {
 		font-weight: 400;
 		font-size: 14px;
-		
 		line-height:16.41px;
 		margin-bottom:8px;
 		color:#262626;
 		position:relative;
+		& a{
+			color:#262626;
+		}
 		&__svg{
 			width:6px;
 			height:7.97px;
@@ -348,7 +350,7 @@ body{
 			right:0;
 			top:5px;
 		}
-		&:hover{
+		&:hover a{
 			color:#FF5833;
 			cursor:pointer;
 		}
@@ -528,13 +530,18 @@ body{
 		padding:20px 40px 20px 20px;
 		box-sizing:border-box;
 		border-radius: 10px 0px 0px 10px;
+		overflow:hidden;
+		position:relative;
 		&__jars{
 			background: #F2DED2;
 		}
-		&__bottles{
-			background:url("../img/bottles.png");
-			background-size:100% 100%;
-			background-repeat:no-repeat;
+		&__img{
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+			z-index:1;
 		}
 		&__decanter{
 			background: #DAF2D2;
@@ -547,11 +554,11 @@ body{
 		}
 		&__title{
 			font-size:20px;
-			
 			line-height:23.44px;
 			font-weight:500;
-			
 			color:#262626;
+			z-index:2;
+			position:relative;
 		}
 		&__btn{
 			background: linear-gradient(to right, #FF3343 0%, #FF6D4D 100%);
@@ -563,11 +570,12 @@ body{
 			justify-content: center;
 			font-weight:600;
 			font-size:14px;
-			
 			line-height:16.41px;
 			color:#ffffff;
 			border-radius:6px;
 			margin-top:8px;
+			z-index:2;
+			position:relative;
 		}
 	}
 
@@ -723,7 +731,7 @@ Categories
 */
 .breadcrumb{
 	@extend %container;
-	margin-top:18px;
+	margin-top:90px;
 	margin-bottom:18px;
 	&-list{
 		display:flex;
@@ -1195,6 +1203,7 @@ Product
 	height:auto;
 	padding-bottom:20px;
 	box-sizing:border-box;
+	margin-top:0;
 }
 .card{
 	@extend %container;
@@ -1671,20 +1680,29 @@ Product
 		& .product{
 			width:172px;
 			height:auto;
+			margin-right:14px;
+			&:last-child{
+				margin-right:0;
+			}
 			&__img{
 				width:100%;
 				height:172px;
 			}
-			&__title{
-
+			&-title{
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color:#404040;
+				display:block;
+				margin-top:10px;
 			}
-			&__order{
-
+			&-pcs{
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 19px;
+				color:#262626;
 			}
-			&__pcs{
-				
-
-			}
+			
 		}
 	}
 }
