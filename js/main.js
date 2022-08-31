@@ -33,4 +33,3 @@ if (window.screen.availWidth < 670) {
 		body.classList.remove('lock');
 	});
 }
-

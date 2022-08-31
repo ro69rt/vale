@@ -1,4 +1,7 @@
 @import "_settings.scss";
+img {
+text-indent: -10000px
+}
 
 /*variables*/
 %container {
@@ -40,6 +43,9 @@ body{
 }
 .content-row{
 @extend %container;
+}
+.home{
+	padding-top:90px;
 }
 .desktop{
 	display:flex;
@@ -293,7 +299,7 @@ body{
 	display: flex;
 	justify-content:center;
     width:100%;
-	margin-top:90px;
+	margin-top:0px;
 	&-slider {
 		width: 936px;
 		height: 320px;
@@ -591,7 +597,7 @@ body{
 		width:25%;
 		box-sizing:border-box;
 		height:auto;
-		padding:14px 9.5px 10.5px 20px;
+		padding:12px 9.5px 10.5px 20px;
 		position:relative;
 		background:#ffffff;
 		height:50%;
@@ -619,8 +625,7 @@ body{
 		}				
 		&__text{
 			font-size: 14px;
-			
-			line-height: 18.75px;
+			line-height: 13.75px;
 			font-weight:500;
 			/*
 			display: -webkit-box;
@@ -638,6 +643,10 @@ body{
 			bottom: 10.5px;
 			max-width:103px;
 			max-height:70px;
+			background: url("../img/no-img.jpg");
+			background-size: 100%;
+			min-width: 70px;
+			min-height: 70px;
 		}
 	}
 		}
@@ -689,7 +698,7 @@ body{
 				color: #404040;
 			}
 			&__title{
-				margin-top:6px;
+				margin-top:8px;
 				display:block;
 			}
 			&__price{
@@ -715,6 +724,8 @@ body{
 			&__img{
 				width:155px;
 				height:155px;
+				background:url("../img/no-img.jpg");
+				background-size:100%;
 			}
 		}
 	}
@@ -736,16 +747,18 @@ Categories
 	&-list{
 		display:flex;
 		width:100%;
+		margin:-2px 0 0 -7px;
 	}
 	&-link{
 		color:#808080;
 		font-size:12px;
-		
 		font-weight:500;
 		line-height:14.06px;
-		
 		padding:0 2px;
 		cursor:pointer;
+		& a{
+			color: #808080;
+		}
 		&:nth-child(1):before{
 			content:"";
 			width:0;
@@ -783,14 +796,23 @@ Categories
 	}
 	&__link{
 		font-size: 14px;
-		
 		line-height: 16px;
 		padding-bottom:8px;
 		cursor:pointer;
 		font-weight:400;
+		height: 24px;
+		width:224px;
+		align-items: center;
+		display: flex;
+		margin-left:-10px;
+		box-sizing: border-box;
+		padding: 4px 0 4px 10px;
+		&:hover{
+			color:#FF5833;
+		}
+		/*Удалить*/
 		&.active{
 			background:#FF5833;
-			height:24px;
 			width:224px;
 			border-radius:5px;
 			color:#ffffff;
@@ -798,14 +820,15 @@ Categories
 			display: flex;
 			margin-left:-10px;
 			box-sizing: border-box;
-			padding:4px 0 4px 10px;
 			margin-bottom:4px;
 			&:hover{
 			color:#ffffff;
 			}
 		}
 		&:hover{
+			/*Вернуть
 			color:#FF5833;
+			*/
 		}
 
 	
@@ -823,7 +846,6 @@ Categories
 		display:block;
 		color:#262626;
 		font-size:16px;
-		
 		font-weight:500;
 		line-height:18.75px;
 		position:relative;
@@ -831,7 +853,7 @@ Categories
 		border-bottom:1px solid #E5E0E0;
 		box-sizing:border-box;
 		padding-bottom:10px;
-		margin:31px 0 11px 0;
+		margin:23px 0 11px 0;
 		cursor:pointer;
 		&.hide:after{
 			content: url("../img/icons/filter-title.svg");
@@ -877,7 +899,7 @@ Categories
    	align-items: center;
    	user-select: none;
 	cursor:pointer;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	color:#262626;
 	font-weight: 400;
 	font-size:14px;
@@ -946,7 +968,7 @@ Categories
 }
 
 .categories-applyied {
-	padding:18px 11px 14px 15px;
+	padding:14px 11px 14px 15px;
 	box-sizing: border-box;
 	display:inline-flex;
 	width:100%;
@@ -1005,9 +1027,8 @@ Categories
 	position:relative;
 	color:#404040;
 	font-size:14px;
-	
 	box-sizing:border-box;
-	margin-top:-2px;
+	margin-top:-5px;
 	& select{
 		padding: 0 0 0 5px;
 		-moz-appearance: none;
@@ -1045,7 +1066,7 @@ Categories
 }
 
 .categories {
-	height:1635px;
+	height:auto;
 	margin-top:20px;
 	background:#ffffff;
 	box-shadow: 0 0 2px rgba(204, 204, 204, 0.6);
@@ -1054,6 +1075,7 @@ Categories
 & .list .product {
 	display:flex;
 	border-bottom: 1px solid #E5E0E0;
+	margin-bottom:-3px;
 	&-left {
 		width:180px;
 		height:180px;
@@ -1075,12 +1097,10 @@ Categories
 		&__title {
 			display:block;
 			font-size:18px;
-			
 			font-weight:700;
 			line-height:19.8px;
 			color:#186DBC;
-			margin-bottom:7px;
-			margin-top:4px;
+			margin-bottom:5px;
 		}
 
 		&__text {
@@ -1089,6 +1109,9 @@ Categories
 			line-height:18.75px;
 			font-weight:500;
 			font-family:"Roboto";
+		}
+		&__min{
+			margin-left:15px;
 		}
 		&__mark{
 			color:#262626;
@@ -1141,8 +1164,8 @@ Categories
 }
 & .gallery .product{
 	width:216px;
-	margin-bottom:30px;
-	height:303px;
+	margin-bottom:26px;
+	height:300px;
 	position:relative;
 	&__img {
 		width:100%;
@@ -1172,7 +1195,7 @@ Categories
 		color:#404040;
 		display:block;	
 		position:absolute;
-		bottom:20px;
+		bottom:18px;
 	}
 	
 	&-order{
@@ -1764,7 +1787,7 @@ Search-result
 
 .sorting{
 	display:flex;
-	margin-right:10px;
+	margin-right:5px;
 	&-icon{
 		width:26px;
 		height:26px;
@@ -1791,6 +1814,9 @@ Search-result
 .salesman {
 	display:flex;
 	border-bottom:1px solid #E5E0E0;
+	&-text__none{
+		background-color: #D9D9D9;
+	}
 	&-left{
 		width:40%;
 		padding:15px 62px 15.5px 15px;
@@ -1801,8 +1827,11 @@ Search-result
 		}
 		&__icon{
 			border-radius:50%;
-			width:40px;
+			width: 40px;
+			min-width: 40px;
+			max-width: 40px;
 			height:40px;
+			background:#D9D9D9;
 		}
 		&__info{
 			display:flex;
@@ -1822,8 +1851,8 @@ Search-result
 			word-wrap: break-word;
 			height:20px;
 		}
+
 		&__text{
-			background-color:#D9D9D9;
 			height:15px;
 			margin:0 0 6px 0;
 			display:block;
@@ -1843,7 +1872,7 @@ Search-result
 		}
 	}
 		&-call{
-			background:linear-gradient( #6BBC38 0% #7BD941  100%);			
+			background:linear-gradient( #6BBC38 0%, #7BD941  100%);			
 			width: 120px;
 			height:35px;
 			display:flex;
@@ -1930,6 +1959,8 @@ Search-result
 		&__img{
 			width:100%;
 			height:135px;
+			background:url("../img/no-img.jpg");
+			background-size:100%;
 		}
 		&__title{
 			font-family:"Roboto";
@@ -1948,11 +1979,38 @@ Search-result
 		&__title{
 			margin-top:10px;
 		}
-
 	}
-	
-
 }
+
+/*
+Search result - not found
+*/
+
+.not-found {
+text-align:center;
+padding-top:15px;
+box-sizing:border-box;
+margin-top:20px;
+&__img {
+	width: 130.64px;
+	height: 102.38px;
+}
+&__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color:#262626;
+	display:block;
+	margin:26.62px 0 5px 0;
+}
+&__text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color:#808080;
+}
+}
+
 
 
 
